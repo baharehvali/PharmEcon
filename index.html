@@ -1,66 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PharmEcon Consulting</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PharmEcon Consulting | Market Access, HEOR, RWE & HTA Strategy</title>
+<meta name="description" content="PharmEcon Consulting provides market access, HEOR, real-world evidence, HTA, reimbursement, and public policy strategy for pharmaceutical, biotech, medtech, and healthcare organizations." />
 <style>
-body{font-family:Arial,sans-serif;margin:0;color:#333;line-height:1.6}
-nav{padding:12px 30px;background:#fff;border-bottom:1px solid #ddd}
-.logo{height:60px}
+:root{
+  --navy:#0d315d;
+  --blue:#1f4e79;
+  --teal:#247b7b;
+  --soft:#f5f8fa;
+  --line:#d9e2e8;
+  --text:#263238;
+}
+*{box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;margin:0;color:var(--text);line-height:1.65;background:#fff}
+a{color:var(--teal)}
+.nav{
+  position:sticky;top:0;z-index:10;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:12px 6%;background:#fff;border-bottom:1px solid var(--line);
+}
+.nav img{height:72px;width:auto;display:block}
+.nav-links{display:flex;gap:26px;align-items:center;font-weight:600}
+.nav-links a{text-decoration:none;color:var(--navy)}
+.nav-links a:hover{color:var(--teal)}
 .hero img{width:100%;display:block}
-section{max-width:1100px;margin:auto;padding:60px 20px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
-.card{border:1px solid #ddd;border-radius:8px;padding:20px}
-.cta{background:#f4f7f9;text-align:center}
-footer{background:#1F4E79;color:white;text-align:center;padding:20px}
-h1,h2{margin-top:0;color:#1F4E79}
-.btn{display:inline-block;background:#2AA198;color:white;padding:12px 22px;border-radius:6px;text-decoration:none}
+.section{max-width:1160px;margin:0 auto;padding:70px 24px}
+.section.alt{background:var(--soft);max-width:none}
+.section.alt .inner{max-width:1160px;margin:0 auto}
+h1,h2,h3{line-height:1.25;margin-top:0;color:var(--navy)}
+h2{font-size:34px;margin-bottom:18px}
+.lead{font-size:20px;color:#54656f;max-width:980px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;margin-top:28px}
+.card{
+  background:#fff;border:1px solid var(--line);border-radius:14px;
+  padding:26px;box-shadow:0 8px 22px rgba(13,49,93,.06);
+}
+.card h3{font-size:21px;margin-bottom:10px}
+.badges{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.badge{background:#e8f2f2;color:#0d4f56;border:1px solid #c5dddd;border-radius:999px;padding:8px 14px;font-weight:600}
+.profile{
+  display:grid;grid-template-columns:1fr 1.3fr;gap:38px;align-items:start;
+}
+.profile-box{
+  background:linear-gradient(135deg,var(--navy),var(--teal));
+  color:#fff;border-radius:18px;padding:32px;
+}
+.profile-box h2,.profile-box h3{color:#fff}
+.profile-box p{margin-bottom:0}
+.timeline{border-left:4px solid #c7dbdf;padding-left:24px}
+.timeline p{margin-top:0}
+.cta{
+  text-align:center;background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;
+  padding:70px 24px;
+}
+.cta h2{color:#fff}
+.btn{
+  display:inline-block;background:#fff;color:var(--navy);text-decoration:none;
+  padding:14px 24px;border-radius:8px;font-weight:700;margin:8px;
+}
+.btn.secondary{background:transparent;color:#fff;border:2px solid #fff}
+footer{background:#0b243f;color:#fff;text-align:center;padding:24px;font-size:14px}
+@media(max-width:800px){
+  .nav{display:block;text-align:center}
+  .nav img{margin:0 auto 10px;height:58px}
+  .nav-links{justify-content:center;flex-wrap:wrap;gap:14px;font-size:14px}
+  .profile{grid-template-columns:1fr}
+  .section{padding:48px 20px}
+  h2{font-size:28px}
+}
 </style>
 </head>
+
 <body>
 
-<nav>
-<img src="logo.png" alt="PharmEcon Consulting" class="logo">
-</nav>
+<header class="nav">
+  <a href="#home"><img src="logo.png" alt="PharmEcon Consulting logo"></a>
+  <nav class="nav-links">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#experience">Founder</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-<div class="hero">
-<img src="header.png" alt="PharmEcon Consulting">
-</div>
+<main id="home">
 
-<section>
-<h2>About PharmEcon Consulting</h2>
-<p>PharmEcon Consulting is a specialized healthcare consulting firm focused on Market Access, Health Economics & Outcomes Research (HEOR), Real-World Evidence (RWE), and Health Technology Assessment (HTA).</p>
+  <section class="hero">
+    <img src="header.png" alt="PharmEcon Consulting - Evidence. Insight. Impact.">
+  </section>
 
-<p>Founded by Bahareh Vali, PhD, PharmEcon Consulting brings extensive leadership experience across pharmaceutical, biotechnology, and medical technology sectors. We help organizations generate evidence, articulate value, and navigate complex reimbursement and policy environments to support patient access to innovative healthcare solutions.</p>
-</section>
+  <section id="about" class="section">
+    <h2>About PharmEcon Consulting</h2>
 
-<section>
-<h2>Our Services</h2>
-<div class="cards">
-<div class="card">
-<h3>Health Economics & HEOR</h3>
-<p>Cost-effectiveness analyses, budget impact models, economic evaluations, and value demonstration.</p>
-</div>
-<div class="card">
-<h3>Market Access Strategy</h3>
-<p>Payer evidence planning, reimbursement strategy, HTA submissions, and stakeholder engagement.</p>
-</div>
-<div class="card">
-<h3>Real-World Evidence</h3>
-<p>Evidence generation planning, outcomes research, database studies, and publication strategy.</p>
-</div>
-</div>
-</section>
+    <p class="lead">
+      PharmEcon Consulting is a specialized healthcare advisory firm focused on market access, health economics and outcomes research (HEOR), real-world evidence (RWE), health technology assessment (HTA), reimbursement strategy, and public policy.
+    </p>
 
-<section class="cta" id="contact">
-<h2>Let's Talk</h2>
-<p>Partner with PharmEcon Consulting to strengthen your healthcare strategy.</p>
-<p><strong>Email:</strong> <a href="mailto:Info@pharmeconconsulting.ca">Info@pharmeconconsulting.ca</a></p>
-</section>
+    <p>
+      We partner with pharmaceutical, biotechnology, medical technology, and healthcare organizations to generate evidence, articulate value, and navigate complex reimbursement and policy environments. Our approach combines scientific rigor, strategic insight, and deep healthcare system expertise to support informed decision-making and accelerate patient access to innovation.
+    </p>
+
+    <div class="badges">
+      <span class="badge">Market Access</span>
+      <span class="badge">HEOR</span>
+      <span class="badge">Real-World Evidence</span>
+      <span class="badge">HTA Strategy</span>
+      <span class="badge">Reimbursement</span>
+      <span class="badge">Public Policy</span>
+    </div>
+  </section>
+
+  <section id="services" class="section alt">
+    <div class="inner">
+      <h2>Services</h2>
+
+      <p class="lead">
+        Strategic, evidence-based support across the product lifecycle — from early evidence planning to reimbursement, launch, and post-market value demonstration.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Market Access Strategy</h3>
+          <p>
+            End-to-end access planning, reimbursement pathway assessment, payer engagement strategy, value proposition development, and launch readiness support.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>HTA & Reimbursement</h3>
+          <p>
+            Support for CDA-AMC, INESSS, provincial payer, and private payer strategy, including evidence gap assessment, submission planning, and payer-ready narratives.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Health Economics & HEOR</h3>
+          <p>
+            Economic evaluation strategy, budget impact planning, cost-effectiveness model interpretation, burden-of-disease evidence, and value communication.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Real-World Evidence</h3>
+          <p>
+            RWE strategy, integrated evidence generation planning, database study concepts, treatment pathway mapping, outcomes research, and evidence translation.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Evidence Generation Planning</h3>
+          <p>
+            Identification of evidence gaps, cross-functional evidence planning, study prioritization, vendor oversight, and development of payer-relevant evidence packages.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Public Policy & Stakeholder Engagement</h3>
+          <p>
+            Policy landscape assessment, stakeholder mapping, patient and system value narratives, and strategic engagement with healthcare decision-makers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="expertise" class="section">
+    <h2>Core Expertise</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Evidence to Value</h3>
+        <p>
+          Translating clinical, economic, and real-world evidence into compelling value narratives for payers, policymakers, clinicians, and healthcare stakeholders.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Canadian Access Landscape</h3>
+        <p>
+          Deep knowledge of Canadian HTA, public and private payer environments, provincial decision-making, reimbursement pathways, and health system priorities.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Cross-Functional Leadership</h3>
+        <p>
+          Collaboration across Medical Affairs, HEOR, Regulatory, Commercial, Government Affairs, Global teams, external vendors, and stakeholder groups.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section alt">
+    <div class="inner profile">
+
+      <div class="profile-box">
+        <h2>Bahareh Vali, PhD</h2>
+        <h3>Founder & Principal Consultant</h3>
+        <p>
+          Market Access, HEOR, Real-World Evidence, and HTA leader with experience across pharmaceutical, biotechnology, medical technology, consulting, and healthcare decision-making environments.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <p>
+          <strong>Strategic expertise:</strong> Extensive experience in reimbursement strategy, evidence generation, payer engagement, and health policy across Canada and global markets.
+        </p>
+
+        <p>
+          <strong>Industry leadership:</strong> Experience developing access strategies, evidence generation plans, HTA submissions, payer value propositions, and reimbursement approaches across oncology, medical technology, vaccines, and specialty healthcare.
+        </p>
+
+        <p>
+          <strong>Health system perspective:</strong> Background in health technology assessment, evidence synthesis, economic evaluation, stakeholder consultation, and decision-support processes within the Canadian healthcare environment.
+        </p>
+
+        <p>
+          <strong>Consulting approach:</strong> Practical, evidence-driven, and commercially aware — helping organizations connect data, value, and policy to support better access decisions.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="cta">
+    <h2>Partner With Us</h2>
+
+    <p>
+      We help healthcare organizations transform evidence into value and accelerate access to innovation.
+    </p>
+
+    <p>
+      <strong>Email:</strong>
+      <a style="color:#fff" href="mailto:Info@pharmeconconsulting.ca">Info@pharmeconconsulting.ca</a>
+    </p>
+
+    <a class="btn" href="mailto:Info@pharmeconconsulting.ca">Email PharmEcon Consulting</a>
+    <a class="btn secondary" href="#services">View Services</a>
+  </section>
+
+</main>
 
 <footer>
-© 2026 PharmEcon Consulting. All rights reserved.
+  <strong>PharmEcon Consulting</strong><br>
+  Market Access | HEOR | Real-World Evidence | HTA Strategy<br>
+  © 2026 PharmEcon Consulting. All rights reserved.
 </footer>
+
 </body>
 </html>
